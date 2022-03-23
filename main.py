@@ -9,9 +9,9 @@ list2 = []
 
 def main():
     team = 0
-    player = int(input("zadej pocet hracu: "))
+    player = int(input("Zadej počet hráčů: "))
     if player % 2 == 0 and player <= 10:
-        x = input("zadej lidi: ")
+        x = input("Zadej jmena hráčů: ")
         list = x.split()
         while team < player / 2:
             team1 = random.choice(list)
@@ -23,7 +23,7 @@ def main():
         print(f"\nTeam 2 je: {list}")
         map()
     else:
-        print("Spatny pocet hracu")
+        print("Špatný počet hráču")
         time.sleep(3)
         os.system("cls")
         main()
